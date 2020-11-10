@@ -16,4 +16,30 @@ include_once "app/paginas/includes/footer.php";
 
 
 //Rodapé
- 
+
+//o certo
+  
+<?php
+// Header
+include_once "app/site/paginas/includes/header.php";
+
+// Navegação 
+include_once "app/site/paginas/includes/navegacao.php";
+
+echo "<hr>";
+
+// Páginas do meu Site 
+//echo '<h1>Minhas Páginas</h1>';
+$paginas=  isset($_GET['pg']);
+if ($paginas) {
+    
+    # code...
+
+} else {
+    # code...
+}
+
+echo '<hr>';
+
+// Rodapé
+include_once "app/site/paginas/includes/footer.php";

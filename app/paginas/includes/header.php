@@ -24,7 +24,7 @@
 <body>
     <!-- Header -->
     <header class="container">
-        <img src="app\assets\img/bannerheader.jpg" alt="">
+        <img src="app\assets\img/bannerheader.jpg" class="img-fluid w-100 p-0" alt="">
 
     </header>
 
