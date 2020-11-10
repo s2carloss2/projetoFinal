@@ -16,13 +16,16 @@
     <!-- outros -->
     <link rel="stylesheet" href="">
 
+    <!--favicon -->
+    <link rel="shortcut icon" href="app\assets\img/icons/icop.png">
+
     <title>Projeto Final</title>
 </head>
 <body>
-
     <!-- Header -->
-    <header>
-jIRINO
+    <header class="container">
+        <img src="app\assets\img/bannerheader.jpg" alt="">
+
     </header>
 
     <!-- Fim Header -->

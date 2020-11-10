@@ -1,19 +1,19 @@
-<!-- Header -->
-<?php
+<?php   
+//header
 include_once "app/paginas/includes/header.php";
-include_once "app/paginas/includes/footer.php";
+
+//navegação
 include_once "app/paginas/includes/navegação.php";
-include_once "app/paginas/contato.php";
-include_once "app/paginas/produtos.php";
-?>
-<!-- Fim Header -->
+
+echo "hr'";
+
+//Fim Header
+include_once "app/paginas/includes/footer.php";
+
+//Páginas do meu Site
+
+//Fim Páginas do meu Site
 
 
-    <!-- Páginas do meu Site -->
-
-
-    <!-- Fim Páginas do meu Site -->
-
-
-    <!-- Rodapé -->
+//Rodapé
  

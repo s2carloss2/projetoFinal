@@ -1,11 +1,17 @@
 <!-- Rodapé -->
-<footer>
-asdasdsaasd
+<footer class="container-fluid table-secondary text-center py-5">
+    <img src="app\assets\img/proje.png" alt="">
+    <div class="container">
+        <p class="text-center pt-3">
+            Todos os Direitos Reservador &copy; 2020.
+        </p>
+
+    </div>
 </footer>
 
 
 <!-- jQuery -->
-<script src="app/assets/js/jquery.js"></script>
+<script src="app/assets/bootstrap\js/jquery.min.js"></script>
 
 <!-- Bootstrap -->
 <script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
@@ -14,4 +20,5 @@ asdasdsaasd
 <script src="app/assets/js/funcoes.js"></script>
 
 </body>
+
 </html>
