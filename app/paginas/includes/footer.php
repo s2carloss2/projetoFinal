@@ -1,5 +1,5 @@
 <!-- Rodapé -->
-<footer class="container-fluid table-secondary text-center py-5">
+<footer class="container-fluid table-secondary text-center">
     <img src="app\assets\img/proje.png" alt="">
     <div class="container">
         <p class="text-center pt-3">
