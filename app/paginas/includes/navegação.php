@@ -8,11 +8,11 @@
       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item active"><a class="nav-link"<?php echo (($_GET['pg'] == 'inicial') ? 'btn py-2 btn-outline-primary':'')?>"" href="?pg=inicial">Inicial</a></li>
+          <li class="nav-item active"><a class="nav-link <?php echo (($_GET['pg'] == 'inicial') ? 'btn py-2 btn-outline-primary':'')?>" href="?pg=inicial">Inicial</a></li>
+          <li class="nav-item active"><a class="nav-link <?php echo (($_GET['pg'] == 'produtos') ? 'btn py-2 btn-outline-primary':'')?>" href="?pg=produtos">produtos</a></li>
+          <li class="nav-item active"><a class="nav-link <?php echo (($_GET['pg'] == 'contato') ? 'btn py-2 btn-outline-primary':'')?>" href="?pg=contato">contatos</a></li>
 
-          <li class="nav-item active"><a class="nav-link" href="?pg=inicial">Inicial</a></li>
-          <li class="nav-item active"><a class="nav-link" href="?pg=produtos">Produtos</a></li>
-          <li class="nav-item active"><a class="nav-link" href="?pg=contato">Contato</a></li>
+        
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item dropdown">

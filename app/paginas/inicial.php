@@ -1,3 +1,5 @@
 <div class="container">
-    <div class="display"></div>
+    <div class="display">
+        Inicial
+    </div>
 </div>
