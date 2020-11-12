@@ -29,7 +29,7 @@ if ($paginas) {
             break;
 
         case 'validaLogin':
-            include_once "app/paginas/,validaLogin.php";
+            include_once "app/paginas/validaLogin.php";
             break;
         
         default:
