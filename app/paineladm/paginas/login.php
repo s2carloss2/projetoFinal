@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Painel Administrativo 3 | Log in</title>
+  <title>Painel Administrativo| Acesso</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -17,7 +17,7 @@
 <body class="hold-transition login-page">
 <div class="login-box mb-5">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Painel Administrativo</b>LTE</a>
+    <a href="../../index2.html"><b>Painel Administrativo </b>Usuario</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -46,7 +46,7 @@
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
               <label for="remember">
-                Lembrar
+                Lembrar Senha
               </label>
             </div>
           </div>
