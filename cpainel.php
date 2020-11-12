@@ -1,15 +1,4 @@
 <?php
-// Header
-include_once "app/paginas/includes/header.php";
-
-// Navegação 
-include_once "app/paginas/includes/navegação.php";
-
-echo "<hr>";
-
-// Páginas do meu Site 
-// echo '<h1>Minhas Páginas</h1>';
-
 $paginas= isset($_GET['pg']);
 
 if ($paginas) {
