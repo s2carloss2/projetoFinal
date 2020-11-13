@@ -42,25 +42,28 @@
           </div>
         </div>
         <div class="row">
+          <!-- /.col -->
+          <div class="col">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+            <a href="?pg=inicial"><button type="submit" class="btn btn-primary btn-lg btn-block my-2">Sair</button></a>
+          </div>
+            </div>
+            <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
+              <input type="checkbox" id="lembrar">
+              <label for="lembrar">
                 Lembrar Senha
               </label>
+              <p class="mb-1">
+                <a href="forgot-password.html">Mudar Senha</a>
+              </p>
             </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
 
-      <p class="mb-1">
-        <a href="forgot-password.html">Mudar Senha</a>
-      </p>
     </div>
     <!-- /.login-card-body -->
   </div>

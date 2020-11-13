@@ -17,7 +17,7 @@ if ($paginas) {
     switch ($_GET['pg']) {
         
         case 'inicial':
-            include_once "app/paginas/standard.php";
+            include_once "app/paginas/inicial.php";
             break;
 
         case 'produtos':
