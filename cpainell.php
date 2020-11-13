@@ -14,6 +14,9 @@ if (isset($_SESSION['usuario'])) {
     // $_SESSION['email'] = $_POST['email'];
 
 
+
+
+
 switch ($_GET['pg']) {
     case 'cpainel':
         include_once "app/paineladm/index.php";
@@ -31,9 +34,3 @@ switch ($_GET['pg']) {
     include_once "app/paineladm/index.php";
 
 };
-
-
-echo '<hr>';
-
-// Rodapé
-//include_once "app/paginas/includes/footer.php";
