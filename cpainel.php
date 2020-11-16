@@ -1,4 +1,4 @@
-<?php
+<!-- 
 
 if (isset($_SESSION['usuario'])) {
     $usuario = 'carlos@hotmail.com';
@@ -10,8 +10,8 @@ if (isset($_SESSION['usuario'])) {
     $_SESSION['email'] = $senha;
 
     
-    // $_SESSION['usuario'] = $_POST['usuario'];
-    // $_SESSION['email'] = $_POST['email'];
+    $_SESSION['usuario'] = $_POST['usuario'];
+    $_SESSION['email'] = $_POST['email'];
 
 
 switch ($_GET['pg']) {
@@ -24,7 +24,7 @@ switch ($_GET['pg']) {
         break;
     
     default:
-        # code...
+        code...
         break;
 }
 }else{
@@ -35,5 +35,40 @@ switch ($_GET['pg']) {
 
 echo '<hr>';
 
-// Rodapé
-//include_once "app/paginas/includes/footer.php";
+//Rodapé
+include_once "app/paginas/includes/footer.php"; -->
+
+<?php
+include_once "app/paineladm/helpers/helperadm.php";
+
+session_start();
+//echo $_SESSION['usuario'];
+
+ //Definindo Variavel
+$pg = 'cpainel';
+
+if (isset($_GET['pg'])) {
+    $pg = $_GET['pg'];
+}
+
+//verifica se ha alguem logado
+if (isset($_SESSION['usuario'])) {
+
+     switch ($pg) {
+         case 'cpainel':
+                 include_once "app/paineladm/index.php";
+             break;
+
+        case 'sair':
+
+        break;
+        
+         default:
+            include_once "app/paineladm/index.php";
+             break;
+     }
+    
+ }else{
+     include_once "app/paineladm/paginas/login.php";
+
+ }

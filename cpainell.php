@@ -1,13 +1,13 @@
-<?php
+<!-- 
 
-if (isset($_SESSION['usuario'])) {
-    $usuario = 'carlos@hotmail.com';
-    $senha = '12456';
+//if (isset($_SESSION['usuario'])) {
+    //$usuario = 'carlos@hotmail.com';
+    //$senha = '12456';
 
-    session_start();
+    //session_start();
 
-    $_SESSION['usuario'] = $usuario;
-    $_SESSION['email'] = $senha;
+    //$_SESSION['usuario'] = $usuario;
+    //$_SESSION['email'] = $senha;
 
     
     // $_SESSION['usuario'] = $_POST['usuario'];
@@ -17,20 +17,46 @@ if (isset($_SESSION['usuario'])) {
 
 
 
-switch ($_GET['pg']) {
-    case 'cpainel':
-        include_once "app/paineladm/index.php";
-        break;
+//switch ($_GET['pg']) {
+    //case 'cpainel':
+        //include_once "app/paineladm/index.php";
+        //break;
 
-    case 'login':
-        include_once "app/paineladm/index.php";
-        break;
+    //case 'login':
+        //include_once "app/paineladm/index.php";
+        //break;
     
-    default:
-        # code...
-        break;
-}
-}else{
-    include_once "app/paineladm/index.php";
+    //default:
+       // break;
+//}
+//}//else{
+    //include_once "app/paineladm/index.php";
 
-};
+//}; -->
+
+
+<!--
+session_start();
+
+//Definindo Variavel
+$pg = 'cpainel';
+
+if (isset($_GET['pg'])) {
+    $pg = $_GET['pg'];
+}
+
+if (isset($_SESSION['usuario'])) {
+
+    switch ($pg) {
+        case 'cpainel':
+                include_once "app/paineladm/index.php"
+            break;
+        
+        default:"app/paineladm/index.php"
+
+            break;
+    }
+    
+}else{
+
+} -->
