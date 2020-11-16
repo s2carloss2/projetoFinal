@@ -69,6 +69,15 @@ if (isset($_SESSION['usuario'])) {
      }
     
  }else{
-     include_once "app/paineladm/paginas/login.php";
-
- }
+     //include_once "app/paineladm/paginas/login.php";
+     //verifica se foi submetido algum metodo POST
+     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+         if (verificaSeLogado()) {
+            include_once "app/paineladm/paginas/index.php";
+         }
+         //echo "o metodo foi igual a post";
+     }else{
+        include_once "app/paineladm/paginas/login.php";
+         //echo 'não houve submissão de formulario';
+     }
+}

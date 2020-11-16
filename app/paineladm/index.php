@@ -1,24 +1,6 @@
 <?php
-if (iseet($_SESSION['usuario'])) {
+if (isset($_SESSION['usuario'])) {
 ?>
-
-
-
-
-
-
-
-
-<?php
-}else{
-  include_once "app/paineladm/paginas/login.php";
-}?>
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -927,3 +909,9 @@ if (iseet($_SESSION['usuario'])) {
 <script src="app/paineladm/dist/js/pages/dashboard.js"></script>
 </body>
 </html>
+
+
+<?php
+}else{
+  include_once "app/paineladm/paginas/login.php";
+}?>
