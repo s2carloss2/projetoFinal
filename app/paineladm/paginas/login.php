@@ -47,7 +47,7 @@
             <!-- /.col -->
             <div class="col">
               <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
-              <button class="btn btn-primary btnc-lg btn-block"><a href="index.php?pg=inicial">Sair</button></a>
+              <button class="btn-block btn-pr"> <a href="index.php?pg=inicial">Sair</a></button>
             </div>
           </div>
           <div class="row">
