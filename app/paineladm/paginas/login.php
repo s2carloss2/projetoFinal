@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,67 +15,69 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="app/paineladm/dist/css/adminlte.min.css">
 </head>
+
 <body class="hold-transition login-page">
-<div class="login-box mb-5">
-  <div class="login-logo">
-    <a href="../../index2.html"><b>Painel Administrativo </b>Usuario</a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Acessar Painel Administrativo</p>
-
-      <form action="cpainel.php?pg=cpainel" method="post">
-        <div class="input-group mb-3">
-          <input type="email" name="usuario" class="form-control" placeholder="Email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" name="senha" class="form-control" placeholder="Senha">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- /.col -->
-          <div class="col">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
-            <a href="?pg=inicial"><button type="submit" class="btn btn-primary btn-lg btn-block my-2">Sair</button></a>
-          </div>
-            </div>
-            <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="lembrar">
-              <label for="lembrar">
-                Lembrar Senha
-              </label>
-              <p class="mb-1">
-                <a href="forgot-password.html">Mudar Senha</a>
-              </p>
-            </div>
-          </div>
-          <!-- /.col -->
-        </div>
-      </form>
-
+  <div class="login-box mb-5">
+    <div class="login-logo">
+      <a href="../../index2.html"><b>Painel Administrativo </b>Usuario</a>
     </div>
-    <!-- /.login-card-body -->
-  </div>
-</div>
-<!-- /.login-box -->
+    <!-- /.login-logo -->
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Acessar Painel Administrativo</p>
 
-<!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+        <form action="cpainel.php?pg=cpainel" method="post">
+          <div class="input-group mb-3">
+            <input type="email" name="usuario" class="form-control" placeholder="Email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" name="senha" class="form-control" placeholder="Senha">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- /.col -->
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Entrar</button>
+              <button class="btn btn-primary btnc-lg btn-block"><a href="index.php?pg=inicial">Sair</button></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-8">
+              <div class="icheck-primary">
+                <input type="checkbox" id="lembrar">
+                <label for="lembrar">
+                  Lembrar Senha
+                </label>
+                <p class="mb-1">
+                  <a href="forgot-password.html">Mudar Senha</a>
+                </p>
+              </div>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+
+      </div>
+      <!-- /.login-card-body -->
+    </div>
+  </div>
+  <!-- /.login-box -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
 </body>
+
 </html>

@@ -10,6 +10,9 @@
         <a href="index3.html" class="nav-link">Inicial</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Produtos</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contato</a>
       </li>
     </ul>
