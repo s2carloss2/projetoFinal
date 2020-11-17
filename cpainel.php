@@ -44,7 +44,7 @@ include_once "app/paineladm/helpers/helperadm.php";
 session_start();
 //echo $_SESSION['usuario'];
 
- //Definindo Variavel
+//Definindo Variavel
 $pg = 'cpainel';
 
 if (isset($_GET['pg'])) {
@@ -54,30 +54,49 @@ if (isset($_GET['pg'])) {
 //verifica se ha alguem logado
 if (isset($_SESSION['usuario'])) {
 
-     switch ($pg) {
-         case 'cpainel':
-                 include_once "app/paineladm/index.php";
-             break;
+    switch ($pg) {
+        case 'cpainel':
+            include_once "app/paineladm/paginas/includes/header.php";
+
+            include_once "app/paineladm/paginas/includes/navegação.php";
+
+            include_once "app/paineladm/paginas/inicial.php";
+            
+            include_once "app/paineladm/paginas/includes/footer.php";
+            break;
 
         case 'sair':
+            session_destroy();
+            header('location: ' .$_SERVER['PHP_SELF']);
 
-        break;
-        
-         default:
-            include_once "app/paineladm/index.php";
-             break;
-     }
-    
- }else{
-     //include_once "app/paineladm/paginas/login.php";
-     //verifica se foi submetido algum metodo POST
-     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-         if (verificaSeLogado()) {
-            include_once "app/paineladm/paginas/index.php";
-         }
-         //echo "o metodo foi igual a post";
-     }else{
+            break;
+
+        default:
+            include_once "app/paineladm/paginas/includes/header.php";
+
+            include_once "app/paineladm/paginas/includes/navegação.php";
+
+            include_once "app/paineladm/paginas/inicial.php";
+            
+            include_once "app/paineladm/paginas/includes/footer.php";
+            break;
+    }
+} else {
+    //include_once "app/paineladm/paginas/login.php";
+    //verifica se foi submetido algum metodo POST
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (verificaSeLogado()) {
+            include_once "app/paineladm/paginas/includes/header.php";
+
+            include_once "app/paineladm/paginas/includes/navegação.php";
+
+            include_once "app/paineladm/paginas/inicial.php";
+            
+            include_once "app/paineladm/paginas/includes/footer.php";
+        }
+        //echo "o metodo foi igual a post";
+    } else {
         include_once "app/paineladm/paginas/login.php";
-         //echo 'não houve submissão de formulario';
-     }
+        //echo 'não houve submissão de formulario';
+    }
 }
