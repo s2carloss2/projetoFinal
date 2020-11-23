@@ -52,6 +52,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td
                                             <td>Other browsers</td>
                                             <td>All others</td>
                                             <td>-</td>
