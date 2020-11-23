@@ -62,10 +62,26 @@ if (isset($_SESSION['usuario'])) {
 
             include_once "app/paineladm/paginas/inicial.php";
 
+            include_once "app/paineladm/paginas/includes/footer.php";
+            break;
+
+        case 'contato':
+            include_once "app/paineladm/paginas/includes/header.php";
+
+            include_once "app/paineladm/paginas/includes/navegação.php";
+
             include_once "app/paineladm/paginas/contato.php";
-            
+
+            include_once "app/paineladm/paginas/includes/footer.php";
+        break;
+
+        case 'produtos':
+            include_once "app/paineladm/paginas/includes/header.php";
+
+            include_once "app/paineladm/paginas/includes/navegação.php";
+
             include_once "app/paineladm/paginas/produtos.php";
-            
+
             include_once "app/paineladm/paginas/includes/footer.php";
             break;
 

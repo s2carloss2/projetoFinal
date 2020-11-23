@@ -1,9 +1,9 @@
 <!-- /.content-wrapper -->
 <footer class="main-footer">
-    <strong>Piara &copy; 2014-2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-    All rights reserved.
+    <strong>Charlinho &copy; 1997-2020 <a href="https://adminlte.io">Charlin.io</a>.</strong>
+    Todos direitos reservados, se vacila e processo.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0-pre
+      <b>Xablau</b> 0.0.1-alpha
     </div>
   </footer>
 
@@ -49,5 +49,39 @@
 <script src="app/paineladm/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="app/paineladm/dist/js/pages/dashboard.js"></script>
+
+<!-- DataTables  & Plugins -->
+<script src="app/paineladm/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="app/paineladm/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="app/paineladm/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="app/paineladm/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="app/paineladm/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="app/paineladm/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="app/paineladm/plugins/jszip/jszip.min.js"></script>
+<script src="app/paineladm/plugins/pdfmake/pdfmake.min.js"></script>
+<script src="app/paineladm/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="app/paineladm/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="app/paineladm/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="app/paineladm/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
+<script>
+    $(function() {
+        $("#example1").DataTable({
+            "responsive": true,
+            "lengthChange": false,
+            "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+        });
+    });
+</script>
 </body>
 </html>
